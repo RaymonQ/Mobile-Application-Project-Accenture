@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
       alignContent: 'center',
       justifyContent: 'center',
       paddingTop: 23,
-
+      
   },
   tput:{
     alignContent: 'center',
@@ -15,22 +15,22 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    margin: 15,
-    height: 40,
-    borderColor: '#7a42f4',
-    borderWidth: 1
+      margin: 15,
+      height: 40,
+      borderColor: '#7a42f4',
+      borderWidth: 1
   },
   submitButton: {
-  backgroundColor: '#7a42f4',
-  padding: 10,
-  margin: 15,
-  height: 40,
+    backgroundColor: '#7a42f4',
+    padding: 10,
+    margin: 15,
+    height: 40,
   },
   submitButtonText:{
-  color: 'white'
+    color: 'white'
   },
   fontt:{
-  fontFamily: 'monospace',
+    fontFamily: 'monospace',
   },
   
 });

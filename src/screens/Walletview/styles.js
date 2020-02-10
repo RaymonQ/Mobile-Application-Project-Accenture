@@ -2,38 +2,31 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-      flex: 1
+      flex: 1,
+      //justifyContent: 'center',
   },
-  btnClickContain: {
-    flex: 1,
+
+  test: {
     flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'stretch',
-    alignSelf: 'stretch',
-    backgroundColor: '#009D6E',
-    borderRadius: 5,
-    padding: 5,
-    marginTop: 5,
-    marginBottom: 5,
+    backgroundColor: 'transparent',
+    
   },
-  btnContainer: {
+  logg: {
     flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'stretch',
-    alignSelf: 'stretch',
-    borderRadius: 10,
+    //flexDirection: 'row-reverse',
+    borderColor: "transparent",
+
+    borderRadius: 0,
+    borderWidth: 5,
+    
+
   },
-  btnIcon: {
-    height: 25,
-    width: 25,
-  },
-  btnText: {
-    fontSize: 18,
-    color: '#FAFAFA',
-    marginLeft: 10,
-    marginTop: 2,
+  scrol: {
+    flex:1,
+    marginTop: 10,
+    alignSelf: 'center',
   }
+ 
 });
 
 export default styles;

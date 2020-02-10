@@ -7,10 +7,14 @@ import Homescreen from '../screens/Homescreen';
 import Signup from '../screens/Signup'; 
 import Cardview from '../screens/Cardview';
 import Walletview from '../screens/Walletview';
+import Login from '../screens/Login test';
 
 import SCREEN_NAMES from './screen-names';
 
+import { useNavigation } from '@react-navigation/native';
+
 const StackNavigator = createStackNavigator({
+    
     [SCREEN_NAMES.home]: {
         screen: Homescreen
     },
@@ -21,8 +25,15 @@ const StackNavigator = createStackNavigator({
         screen: Cardview
     },
     [SCREEN_NAMES.wallet]: {
-        screen: Walletview
+        screen: Walletview,
+        headerShown: false
+        
+    },
+    [SCREEN_NAMES.login]: {
+        screen: Login
+        
     }
+    
 });
 
 export default createAppContainer(StackNavigator);
