@@ -75,7 +75,7 @@ class Login extends React.PureComponent {
         if (this.state.res == 1) {
             this.setState({res: 0})
             AsyncStorage.setItem('User', this.state.email);
-            this.asy()
+            //this.asy()
             console.log("entering wallet...")
 
             this.props.navigation.dispatch(
@@ -93,12 +93,13 @@ class Login extends React.PureComponent {
                     <Text style={styles.fontt}>Log In</Text>
                 </View>
                 
+                <View style={styles.tput}>
                 <TextInput
                     label='Email'
                     value={this.state.email}
                     onChangeText={email => this.setState({email})}
                     placeholder={'Email'}
-                    style={styles.tput}
+                   
                 />
                 <TextInput
                     label='Password'
@@ -107,8 +108,9 @@ class Login extends React.PureComponent {
                     placeholder={'Password'}
                     secureTextEntry={true}
                 />
+                </View>
                 
-                <View>
+                <View style={styles.bu}>
                     <Button
                         title={'Login'}
                         //style={styles.input}

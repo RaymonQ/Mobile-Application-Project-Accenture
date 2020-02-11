@@ -18,10 +18,13 @@ class Homescreen extends React.PureComponent {
         return (
             <View style={styles.container}>    
 
-            <Image source={require('../icons/digi.png')}
-                    style={styles.iconss}
-                    
-            />
+              
+                    <Image source={require('../icons/digi.png')}
+                            style={styles.iconss}
+                    />
+
+ 
+           
 
                 <View style={styles.hbutton}>         
                     <Button title="To Sign Up" onPress={() => this.navigate(SCREEN_NAMES.signup)}

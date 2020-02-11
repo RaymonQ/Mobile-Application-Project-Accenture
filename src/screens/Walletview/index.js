@@ -127,9 +127,10 @@ class Walletview extends React.PureComponent {
             )
         }
 
-        fetch("https://thvvnupw5a.execute-api.ap-southeast-2.amazonaws.com/prod/postcard", options);
-  
-        this.componentDidMount()
+        fetch("https://thvvnupw5a.execute-api.ap-southeast-2.amazonaws.com/prod/postcard", options).then(res=>{
+            this.componentDidMount()
+        });
+        
         //this.setState({added: !this.state.added})
     }
 
@@ -175,16 +176,10 @@ class Walletview extends React.PureComponent {
                             onPress = {
                                 this.openImagePickerAsync
                             }
-                            color = 'skyblue'
+                            color = 'royalblue'
                         /> 
                     </View>
 
-                    <View style={styles.logg}>
-                        <Button 
-                            title = "Delete"
-                            color = 'red'
-                        />   
-                    </View> 
 
                     <View style={styles.logg}>
                         <Button 
@@ -192,6 +187,7 @@ class Walletview extends React.PureComponent {
                             onPress = {
                                 this.logout
                             }
+                            color = 'royalblue'
                         />
                     </View>
                 </View>

@@ -69,7 +69,7 @@ class Signup extends React.PureComponent {
                 <View style = {styles.fontt}>
                     <Text style={styles.fontt}>Sign Up</Text>
                 </View>
-
+            <View style={styles.tput}>
                 <TextInput
                 label='Email'
                 value={this.state.email}
@@ -84,8 +84,8 @@ class Signup extends React.PureComponent {
                 placeholder={'Password'}
                 secureTextEntry={true}
                 />
-                
-                <Button
+            </View>
+                <Button style={styles.buuh}
                 title={'SUBMIT'}
                 //style={styles.input}
                 onPress={this.onLogin.bind(this)}

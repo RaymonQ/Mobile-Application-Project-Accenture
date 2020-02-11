@@ -7,11 +7,14 @@ const styles = StyleSheet.create({
       alignContent: 'center',
       justifyContent: 'center',
       paddingTop: 23,
+      alignItems:'center',
+      
 
   },
   tput:{
     alignContent: 'center',
     justifyContent: 'center',
+    marginBottom: 18,
   },
 
   input: {
@@ -31,7 +34,11 @@ const styles = StyleSheet.create({
   },
   fontt:{
   fontFamily: 'monospace',
+  marginBottom:10,
   },
+  bu:{
+
+  }
   
 });
 

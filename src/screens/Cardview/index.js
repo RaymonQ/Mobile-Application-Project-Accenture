@@ -45,17 +45,24 @@ class Cardview extends React.PureComponent {
 
                 <View style={styles.cardLook}>
                     <View style={styles.lhs}>
-                        <Text style={styles.textb}>{name}</Text>   
+                        <Text style={styles.textb}>Name: </Text>   
+                        <Text style={styles.textb}>{name}</Text> 
+                        <Text style={styles.textc}>Position: </Text>  
                         <Text style={styles.textc}>{Position}</Text>
                     </View>
                     <View style={styles.rhs}>
+                        <Text style={styles.text}>Company: </Text>
                         <Text style={styles.text}>{company_name}</Text>
+                        <Text style={styles.text}>Phone: </Text>
                         <Text style={styles.text}>{ph}</Text>
+                        <Text style={styles.text}>Email: </Text>
                         <Text style={styles.text}>{email}</Text>
                         <Text></Text>
-                        <Text style={styles.text}
+                        <Text style={styles.textl}>Website: </Text>
+                        <Text style={styles.textl}
                             onPress={() => Linking.openURL(pressableLink)}>
                         {Link}</Text>
+                        <Text style={styles.text}>Social Medias: </Text>
                         <Text style={styles.text}>{Social}</Text>
                     </View>
                 </View>
