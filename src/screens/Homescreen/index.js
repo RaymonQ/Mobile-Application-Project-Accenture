@@ -19,7 +19,7 @@ class Homescreen extends React.PureComponent {
                 />
 
                 <View style={styles.hbutton}>         
-                    <Button title="To Sign Up" onPress={() => this.navigate(SCREEN_NAMES.signup)}
+                    <Button title="Sign Up" onPress={() => this.navigate(SCREEN_NAMES.signup)}
                         color='royalblue'
                     />
                     <Text></Text>
