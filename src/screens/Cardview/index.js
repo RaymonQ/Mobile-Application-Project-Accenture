@@ -3,7 +3,6 @@ import { Text, View, Button, Linking } from 'react-native';
 
 import styles from './styles';
 
-
 class Cardview extends React.PureComponent {
     constructor(props) {
         super(props);
@@ -11,7 +10,6 @@ class Cardview extends React.PureComponent {
             deleted: false
         };
     }
-
 
     deleteCard = async (idCard) => {
         const options = {
@@ -29,7 +27,6 @@ class Cardview extends React.PureComponent {
 
     render(){
         const { name, company_name, ph, email, CardID, Position, Link, Social } = this.props;
-        console.log(Link)
         var pressableLink = "";
         const re = /http/;
         if(re.test(Link)){

@@ -1,5 +1,3 @@
-import React from 'react';
-import { View, Text } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
@@ -10,8 +8,6 @@ import Walletview from '../screens/Walletview';
 import Login from '../screens/Login test';
 
 import SCREEN_NAMES from './screen-names';
-
-import { useNavigation } from '@react-navigation/native';
 
 const StackNavigator = createStackNavigator({
     
@@ -25,13 +21,10 @@ const StackNavigator = createStackNavigator({
         screen: Cardview
     },
     [SCREEN_NAMES.wallet]: {
-        screen: Walletview,
-        headerShown: false
-        
+        screen: Walletview,        
     },
     [SCREEN_NAMES.login]: {
         screen: Login
-        
     }
     
 });

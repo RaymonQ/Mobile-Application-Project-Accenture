@@ -9,18 +9,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     maxWidth: 340,
     marginBottom: 15,
-    
-
-    //alignContent: 'space-evenly',
-    //maxwidth: 400,
-    //maxheight: 300,
-    //shadow:
-
-    //automatically flex vertical
-
-
-
-
   },
   text:{
     fontWeight: 'bold',
@@ -31,7 +19,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16,
     fontFamily: 'monospace',
-    
   },
   texta:{
     fontWeight: 'bold',
@@ -45,18 +32,13 @@ const styles = StyleSheet.create({
   },
   lhs: {
     flex:1,
-    //flexDirection:"column",
   },
   rhs: {
     flex:1,
-    //flexDirection:"column",
   },
   cardLook: {
     flex: 1,
-    //flexDirection: 'row',
   },
-  
-  
 });
 
 export default styles;

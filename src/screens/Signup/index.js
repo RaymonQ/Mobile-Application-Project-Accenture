@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { Text, TextInput, View, Alert, Button, AsyncStorage } from 'react-native';
 
 import styles from './styles';
-//import Walletview from '../Walletview';
-
-//import SCREEN_NAMES from '../../navigation/screen-names';
 
 import { NavigationActions } from 'react-navigation';
 import { StackActions } from 'react-navigation';
@@ -19,10 +16,7 @@ class Signup extends React.PureComponent {
             email: '',
             pass: '',
           };
-      
-        
     }
-
 
     postSign = async (email, pass) => {
         
@@ -87,7 +81,6 @@ class Signup extends React.PureComponent {
             </View>
                 <Button style={styles.buuh}
                 title={'SUBMIT'}
-                //style={styles.input}
                 onPress={this.onLogin.bind(this)}
                 color='royalblue'
                 />
