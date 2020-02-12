@@ -3,7 +3,6 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
       flex: 1,
-      //justifyContent: 'center',
   },
 
   test: {
@@ -13,7 +12,6 @@ const styles = StyleSheet.create({
   },
   logg: {
     flex: 1,
-    //flexDirection: 'row-reverse',
     borderColor: "transparent",
 
     borderRadius: 0,

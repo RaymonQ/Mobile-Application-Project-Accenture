@@ -22,7 +22,6 @@ class Cardview extends React.PureComponent {
         }
         fetch("https://thvvnupw5a.execute-api.ap-southeast-2.amazonaws.com/prod/deletecard", options);
         this.setState({deleted: true});
-
     }
 
     render(){

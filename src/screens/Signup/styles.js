@@ -37,8 +37,12 @@ const styles = StyleSheet.create({
   marginBottom:10,
   },
   bu:{
-
-  }
+    marginTop: 7,
+  },
+  move:{
+    flex: 1,
+    marginTop: 180,
+  },
   
 });
 

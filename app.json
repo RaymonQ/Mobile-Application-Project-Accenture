@@ -28,7 +28,12 @@
     },
     "android": {
       "package": "com.rse.digi",
-      "versionCode": 1,
-    }
+      "versionCode": 1
+    },
+    "androidNavigationBar": {
+      "visible": true,
+      "barStyle": "dark-content",
+      "backgroundColor": "#000000",
+    },
   }
 }

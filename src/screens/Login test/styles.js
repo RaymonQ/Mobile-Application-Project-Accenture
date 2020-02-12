@@ -37,7 +37,12 @@ const styles = StyleSheet.create({
   },
   bu:{
     alignItems:"center",
-  }
+    marginTop: 7,
+  },
+  move:{
+    flex: 1,
+    marginTop: 180,
+  },
   
 });
 

@@ -60,30 +60,41 @@ class Signup extends React.PureComponent {
         return(
 
             <View style = {styles.container}>
-                <View style = {styles.fontt}>
-                    <Text style={styles.fontt}>Sign Up</Text>
-                </View>
-            <View style={styles.tput}>
-                <TextInput
-                label='Email'
-                value={this.state.email}
-                onChangeText={email => this.setState({email})}
-                placeholder={'Email'}
-                />
 
-                <TextInput
-                label='Password'
-                value={this.state.pass}
-                onChangeText={pass => this.setState({pass})}
-                placeholder={'Password'}
-                secureTextEntry={true}
-                />
-            </View>
-                <Button style={styles.buuh}
-                title={'SUBMIT'}
-                onPress={this.onLogin.bind(this)}
-                color='royalblue'
-                />
+
+                <View style = {styles.move}>
+
+                    <View style = {styles.fontt}>
+                        <Text style={styles.fontt}>Sign Up</Text>
+                    </View>
+
+                    <View style={styles.tput}>
+                        <TextInput
+                        label='Email'
+                        value={this.state.email}
+                        onChangeText={email => this.setState({email})}
+                        placeholder={'Email'}
+                        />
+
+                        <TextInput
+                        label='Password'
+                        value={this.state.pass}
+                        onChangeText={pass => this.setState({pass})}
+                        placeholder={'Password'}
+                        secureTextEntry={true}
+                        />
+                    </View>
+
+                    <View style={styles.bu}>
+                        <Button style={styles.buuh}
+                        title={'SUBMIT'}
+                        onPress={this.onLogin.bind(this)}
+                        color='royalblue'
+                        />
+                    </View>
+
+                </View>
+
             </View>
         );
     }
