@@ -76,7 +76,6 @@ class Login extends React.PureComponent {
                         value={this.state.email}
                         onChangeText={email => this.setState({email})}
                         placeholder={'Email'}
-                    
                     />
                     <TextInput
                         label='Password'

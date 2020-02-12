@@ -9,9 +9,6 @@ import Login from '../screens/Login test';
 
 import SCREEN_NAMES from './screen-names';
 
-import { NavigationActions } from 'react-navigation';
-import { StackActions } from 'react-navigation';
-
 const StackNavigator = createStackNavigator({
     
     [SCREEN_NAMES.home]: {
@@ -21,8 +18,6 @@ const StackNavigator = createStackNavigator({
     [SCREEN_NAMES.signup]: {
         screen: Signup
     },
-
-
     [SCREEN_NAMES.card]: {
         screen: Cardview
     },
@@ -32,12 +27,7 @@ const StackNavigator = createStackNavigator({
     [SCREEN_NAMES.login]: {
         screen: Login
     },
-    
-    
-});
 
-StackNavigator.navigationOptions = {
-    
-};
+});
 
 export default createAppContainer(StackNavigator);
