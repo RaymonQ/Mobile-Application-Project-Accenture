@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, TextInput, View, Alert, Button, AsyncStorage } from 'react-native';
+import { Text, TextInput, View, Alert, Button, AsyncStorage, ImageBackground } from 'react-native';
 
 import styles from './styles';
 
@@ -65,6 +65,9 @@ class Login extends React.PureComponent {
 
             <View style = {styles.container}>
 
+
+
+    
                 <View style={styles.move}>
                     <View style={styles.fontt}>
                         <Text style={styles.fontt}>Log In</Text>
